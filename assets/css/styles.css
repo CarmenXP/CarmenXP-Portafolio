@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+:root{
+    --backgroundBody:#E3E3E3;
+    --titles: #FF4F6F;
+    --white: #FFFFFF;
+    --blue:#34B0BE;
+    --black:#2e2d2b;
+    --gras: #ADADAD;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    background-color: aquamarine;
+    width: 100%;
+}
+ul{
+    display: flex;
+    align-items: center;
+    margin-right: 2.5rem;    
+}
+li{
+    list-style: none;
+    margin-right: 1rem;
+    padding: 2px;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: .9rem;
+}
+.square {
+    position: absolute;
+    background-color: #2e2d2b;
+    height: 14%;
+    width: 14%;
+    left: 5%;
+    top:2%;
+}
+.square img{
+    width: 100%;
+}
+.content{
+    display:flex;
+    margin-top: 3rem;
+   
+}
+.photo{
+    padding-top: 3.50rem;
+    width: 50%;
+    background-color: blanchedalmond;
+}
+.photo img{
+    width: 95%;
+}
+.presentation{
+    padding-top: .75rem;
+    width: 50%;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    
+}
+.presentation h2{
+    color: var(--titles);
+    word-spacing: 2.5px;
+    font-size: 2.75rem;
+}
+.presentation h1{
+    
+    font-size:  3.25rem; 
+    margin: .7rem  0;
+}
+.bx{
+    font-size: 2.25rem;
+    background-color:var(--white);
+    color: var(--blue);
+    padding: .75rem;
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+    margin-right: 3px;
+}
+.line{
+    width: 90%;
+    border: 1px solid var(--gras);
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+.whatsapp{
+    background-color: var(--titles);
+    color: var(--white);
+    font-size: 1.25rem;
+    width: 60%;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    justify-content: center;
+}
+.whatsapp p{
+    display: flex;
+    align-items: center;
+}
+.whatsapp .bx{
+    color: var(--white);
+    font-size: 2rem;
+    background-color: var(--titles);
+    border: none;
+}    
