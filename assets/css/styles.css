@@ -14,8 +14,15 @@
     margin: 0;
     padding: 0;
 }
+.text{
+    color: var(--titles);
+    margin-left: 2rem;
+    margin-bottom: 1.25rem;
+    padding-top: 1rem;
+}
 header{
     position: relative;
+
 }
 nav{
     display: flex;
@@ -42,7 +49,7 @@ li a{
 }
 .square {
     position: absolute;
-    background-color: #2e2d2b;
+    
     height: 14%;
     width: 14%;
     left: 5%;
@@ -115,4 +122,75 @@ li a{
     font-size: 2rem;
     background-color: var(--titles);
     border: none;
-}    
+}  
+.about-me{
+    height: 100vh;
+    background-color: paleturquoise;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/Group\ 84.svg);
+    background-size: 35% 35%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.about-me h2{
+    color: var(--titles);
+} 
+.about-me p{
+    width: 65%;
+    margin-left: 2rem;
+    color: var(--gras);
+}
+.college{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    font-size: .75rem;
+    margin-top: 1.5rem;
+} 
+.academlo{
+    text-align: center;
+    width: 20%;
+    height: 60%;
+    
+} 
+.academlo img{
+    width: 100%;
+    height: 100%;
+    
+}
+.unam{
+    width: 18%;
+    height: 60%;
+    text-align: center;
+}
+.unam img{
+    width: 100%;
+    height: 100%;
+    
+} 
+.unam p{
+    
+    
+}
+.skills-section{
+    background-color: palevioletred;
+}
+.content-skills{
+    display: grid;
+    grid-template-columns: 25% 25%;
+    gap: 2rem;
+    justify-content: center;
+}
+.skill {
+    text-align: center;
+}
+.skill i{
+    padding: 1.75rem;
+}
+footer{
+    text-align: center;
+    font-size: medium;
+    padding: 2rem ;
+   
+}
