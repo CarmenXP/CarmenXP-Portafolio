@@ -22,13 +22,12 @@
 }
 header{
     position: relative;
-
 }
 nav{
     display: flex;
     justify-content: end;
     height: 60px;
-    background-color: aquamarine;
+    
     width: 100%;
 }
 ul{
@@ -60,33 +59,33 @@ li a{
 }
 .content{
     display:flex;
-    margin-top: 3rem;
+    margin-top: 1rem;
    
 }
 .photo{
-    padding-top: 3.50rem;
+    
     width: 50%;
-    background-color: blanchedalmond;
+    
 }
 .photo img{
     width: 95%;
 }
 .presentation{
     padding-top: .75rem;
-    width: 50%;
-    background-color: burlywood;
+    width: 50%; 
     display: flex;
     flex-direction: column;
-    
+    justify-content: flex-start;
+
 }
 .presentation h2{
     color: var(--titles);
     word-spacing: 2.5px;
-    font-size: 2.75rem;
+    font-size: 2rem;
 }
 .presentation h1{
     
-    font-size:  3.25rem; 
+    font-size:  2.50rem; 
     margin: .7rem  0;
 }
 .bx{
@@ -125,7 +124,7 @@ li a{
 }  
 .about-me{
     height: 100vh;
-    background-color: paleturquoise;
+    background-color: palevioletred;
     display: flex;
     flex-direction: column;
     background-image: url(../images/Group\ 84.svg);
@@ -174,7 +173,7 @@ li a{
     
 }
 .skills-section{
-    background-color: palevioletred;
+    
 }
 .content-skills{
     display: grid;
@@ -194,3 +193,178 @@ footer{
     padding: 2rem ;
    
 }
+@media only screen and (min-width:320px){
+    .presentation h2{
+        font-size: .75rem;
+    }
+    .presentation h1{
+        font-size: 1.20rem;
+    }
+    .whatsapp {
+        font-size: .75rem;
+        width: 65%;
+    }
+    .whatsapp .bx{
+        font-size: .75rem;
+        padding: .25rem;
+    }
+    .social-icons i{
+        
+        font-size: .75rem;
+        
+        padding: .50rem;
+       
+        margin-right: 3px;
+    }
+    .line{
+        margin-bottom: .5rem;
+    }
+
+}
+@media only screen and (min-width:420px){
+    .presentation h2{
+        font-size: 1.1rem;
+    }
+    .presentation h1{
+        font-size: 1.75rem;
+    }
+    .whatsapp {
+        font-size: .75rem;
+        width: 65%;
+    }
+    .whatsapp .bx{
+        font-size: 1rem;
+        padding: .25rem;
+    }
+    .social-icons i{
+        
+        font-size: 1rem;
+        
+        padding: .75rem;
+       
+        margin-right: 3px;
+    }
+    .line{
+        margin-bottom: .5rem;
+    }
+
+}
+
+@media only screen and (min-width: 500px){
+    .presentation h2{
+        font-size: 1.5rem;
+    }
+    .presentation h1{
+        font-size: 2rem;
+    }
+    .whatsapp {
+        font-size: .85rem;
+        width: 65%;
+    }
+    .whatsapp .bx{
+        font-size: 1.2rem;
+        padding: .25rem;
+    }
+    .social-icons i{
+        
+        font-size: 1.2rem;
+        
+        padding: .75rem;
+       
+        margin-right: 3px;
+    }
+    .line{
+        margin-bottom: .5rem;
+    }
+}
+@media only screen and (min-width: 668px){
+    .presentation h2{
+        font-size: 2rem;
+    }
+    .presentation h1{
+        font-size: 2.5rem;
+    }
+    .social-icons i{
+        
+        font-size: 2.1rem;
+        
+        padding: .65rem;
+        
+        
+        margin-right: 3px;
+    }
+    .whatsapp {
+        font-size: 1.5rem;
+        width: 60%;
+    }
+    .whatsapp .bx{
+        font-size: 2rem;
+        padding: .25rem;
+    }
+    .line{
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px){
+    .presentation h2{
+        font-size: 2.75rem;
+    }
+    .presentation h1{
+        font-size: 3.25rem;
+    }
+    .social-icons i{
+        
+            font-size: 2.25rem;
+            
+            padding: .75rem;
+           
+            margin-right: 8px;
+    }
+    .line{
+        margin-bottom: 1.25rem;
+    }
+    .content{
+        margin-top: 1.5rem;
+       
+    }
+
+}
+@media only screen and (min-width: 992px){
+    .presentation h2{
+        font-size: 3.75rem;
+    }
+    .presentation h1{
+        font-size: 4.25rem;
+    }
+    .presentation{
+        justify-content: space-evenly;
+    }
+    .social-icons i{
+        padding: 1rem;
+    }
+}
+/*
+@media only screen and (min-width:320px){
+    .presentation h2{
+        font-size: 1rem;
+    }
+    .presentation h1{
+        font-size: 1.25rem;
+    }
+    .social-icons i{
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    .whatsapp {
+        font-size: .6rem;
+        width: 70%;
+    }
+    .whatsapp .bx{
+        font-size: 1rem;
+        padding: .25rem;
+    }
+}
+*/
