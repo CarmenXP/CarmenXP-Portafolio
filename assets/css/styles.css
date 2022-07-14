@@ -6,13 +6,17 @@
     --white: #FFFFFF;
     --blue:#34B0BE;
     --black:#2e2d2b;
-    --gras: #ADADAD;
+    --gras: #8f8989;
 }
 *{
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
+}
+body{
+    max-width: 90%;
+    margin:0 auto;
 }
 .text{
     color: var(--titles);
@@ -27,12 +31,11 @@ nav{
     display: flex;
     justify-content: end;
     height: 60px;
-    
     width: 100%;
 }
 ul{
     display: flex;
-    align-items: center;
+    align-items:flex-end;
     margin-right: 2.5rem;    
 }
 li{
@@ -44,7 +47,16 @@ li{
 li a{
     text-decoration: none;
     color: var(--black);
-    font-size: .9rem;
+    font-size: .85rem;
+    cursor: pointer;
+}
+.menu .bx-menu{
+    
+    border-radius: 0%;
+    display: none;
+}
+.bx-menu{
+    padding: 2px;
 }
 .square {
     position: absolute;
@@ -56,6 +68,7 @@ li a{
 }
 .square img{
     width: 100%;
+    height: 100%;
 }
 .content{
     display:grid;
@@ -92,6 +105,9 @@ li a{
     font-size:  2.25rem; 
     margin: .7rem  0;
 }
+.social-icons a{
+    cursor: pointer;
+}
 .bx{
     font-size: 2.25rem;
     background-color:var(--white);
@@ -115,6 +131,10 @@ li a{
     border-radius: 25px 25px 25px 25px;
     display: flex;
     justify-content: center;
+}
+.whatsapp a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 .whatsapp p{
     display: flex;
@@ -161,28 +181,20 @@ li a{
     background-color: palegoldenrod;
 } 
 .academlo img{
-    width: 90%;
-  
-    
+    width: 90%;   
 }
 .unam{
-   
     text-align: center;
     background-color: palegreen;
 }
 .unam img{
-    width: 90%;
-    
-    
+    width: 90%;    
 } 
 .unam p, .academlo p{
     margin: 0;
     padding: 0;
     font-size: .8rem;
    
-    
-}
-.skills-section{
     
 }
 .content-skills{
@@ -231,6 +243,7 @@ footer{
     padding: 2rem ;
    
 }
+
 @media only screen and (min-width:320px){
    /* .presentation h2{
         font-size: .75rem;
@@ -294,6 +307,10 @@ footer{
         margin-bottom: .5rem;
         width: 50%;
     }
+    .college{
+        grid-template-columns: 27% 27%;
+        column-gap: 3rem;
+    }
    
 
 }
@@ -331,7 +348,35 @@ footer{
         font-size: 1.75rem;
         
     }
+    .presentation h2{
+        font-size: 2.3rem;
+    }
+    .presentation h1{
+        font-size: 2.85rem;
+    }
    
+}
+@media (max-width:668px){
+        .presentation h1{
+            text-align: center;
+        }
+        .about-me p{
+            width: 80%;
+            font-size: 1rem;
+            line-height: 1.4rem ;
+        }
+        .academlo .unam{
+            text-align: center;
+        }
+        .academlo p, .unam p{
+            font-size: .9rem;
+            margin: 0;
+            padding: 0;
+        }
+        .skill i{
+            padding: 1.1rem;
+        }
+
 }
 @media only screen and (min-width: 668px){
     .content{
@@ -362,8 +407,8 @@ footer{
         margin-right: 3px;
     }
     .whatsapp {
-        font-size: 1.5rem;
-        width: 60%;
+        font-size: 1.25rem;
+        width: 62%;
         border-radius: 0 25px 25px 0;
     }
     .whatsapp .bx{
@@ -372,25 +417,54 @@ footer{
     }
     .line{
         margin-bottom: 1rem;
+        width: 60%;
     }
     .about-me p{
         font-size: 1rem;
         width: 75%;
+        line-height: 1.5rem;
     }
     .college{
         grid-template-columns: 20% 20%;
         column-gap: 4rem;
     }
 }
-
+/*====================Medias queries==========================*/
+/*Menú hamburguesa*/
+@media (max-width:768px){
+    .menu .bx-menu{
+        display: block;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        background-color: #ADADAD;
+        position: fixed;
+        top:60px;
+        width: 100%;
+        height: 100vh;
+        margin: 0px;
+        padding-top: 1rem;
+        align-items:center;
+        justify-content: space-around;
+        display: none;
+    }
+    li{
+        margin: 0;
+    }
+    li a{
+        font-size: large;
+    }
+}
+/*-------------------------------------------------------------*/
 
 
 @media only screen and (min-width: 768px){
     .presentation h2{
-        font-size: 2.75rem;
+        font-size: 2.5rem;
     }
     .presentation h1{
-        font-size: 3.25rem;
+        font-size: 3rem;
     }
     .social-icons i{
         
@@ -411,14 +485,15 @@ footer{
         grid-template-columns: 18% 18%;
         column-gap: 4.75rem;
     }
+    
 
 }
 @media only screen and (min-width: 992px){
     .presentation h2{
-        font-size: 3.75rem;
+        font-size: 3.5rem;
     }
     .presentation h1{
-        font-size: 4.25rem;
+        font-size: 3.75rem;
     }
     .presentation{
         justify-content: space-evenly;
